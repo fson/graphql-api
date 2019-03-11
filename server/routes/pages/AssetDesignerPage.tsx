@@ -12,6 +12,7 @@ import domToImage from "retina-dom-to-image";
 import { Theme } from "../../schema/Theme";
 import * as components from "../components";
 import connect from "../components/connect";
+import connected from "../components/connected";
 import GlobalStyles from "../components/GlobalStyles";
 import Select from "../components/Select";
 import VariableSelector from "../components/VariableSelector";
@@ -146,6 +147,11 @@ function AssetDesignerPage({
   const selection = getSelection(selectionId) || NoSelectionFound;
   const sideBarWidth = "18em";
   const assetDesignTemplateId = "asset-design-template-id";
+
+  if (selection.connect) {
+    // TODO: Apply connector now
+    console.log("connecting to ", selection.name, connected(selection));
+  }
 
   return (
     <AssetDesignerContainer width={sideBarWidth}>
