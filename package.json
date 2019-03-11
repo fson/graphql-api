@@ -35,6 +35,7 @@
     "@types/md5": "^2.1.33",
     "@types/morgan": "^1.7.35",
     "@types/node": "^11.11.3",
+    "@types/prettier": "^1.16.1",
     "@types/query-string": "^6.3.0",
     "@types/react": "^16.8.8",
     "@types/react-copy-to-clipboard": "^4.2.6",
