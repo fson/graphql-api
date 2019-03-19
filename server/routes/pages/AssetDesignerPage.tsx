@@ -308,7 +308,8 @@ function AssetDesignerSidebar({
         />
       </SidebarItem>
 
-      {(selection.propTypeAST.length > 0 || variableOptions.length > 0) && (
+      {(get(selection, "propTypeAST", []).length > 0 ||
+        variableOptions.length > 0) && (
         <SidebarItem>
           <SidebarHeader>Variables</SidebarHeader>
 
